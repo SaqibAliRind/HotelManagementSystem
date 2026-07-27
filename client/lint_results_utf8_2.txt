@@ -1,0 +1,4 @@
+﻿D:\naqsh\Aptech\E-Project\client\src\pages\AdminPages\AdminAddons.jsx:110:104: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`. [Error/react/no-unescaped-entities]
+D:\naqsh\Aptech\E-Project\client\src\pages\AdminPages\AdminHomeSettings.jsx:157:91: Parsing error: Unexpected token { [Error]
+
+2 problems
