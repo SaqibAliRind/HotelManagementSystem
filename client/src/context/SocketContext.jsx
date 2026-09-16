@@ -13,7 +13,10 @@ export const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         // Use window.location.hostname to avoid issues with different environments
-        const backendUrl = `http://${window.location.hostname}:7000`;
+        const isProd = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+        const backendUrl = isProd 
+            ? 'https://server-five-sand-15.vercel.app' 
+            : `http://${window.location.hostname}:7000`;
         
         // Connect with polling first as it's more stable for handshakes
         const socketInstance = io(backendUrl, {

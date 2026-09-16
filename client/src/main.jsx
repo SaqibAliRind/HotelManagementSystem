@@ -7,6 +7,11 @@ import './index.css'
 
 import { SocketProvider } from './context/SocketContext'
 import { ToastProvider } from './context/ToastContext'
+import axios from 'axios'
+
+if (import.meta.env.MODE === 'production') {
+  axios.defaults.baseURL = 'https://server-five-sand-15.vercel.app';
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
