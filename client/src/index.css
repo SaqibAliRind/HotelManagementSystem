@@ -1475,7 +1475,7 @@ div:hover > .gallery-overlay { opacity: 1 !important; }
   align-items: flex-start;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .rooms-main-container {
     flex-direction: column;
   }
